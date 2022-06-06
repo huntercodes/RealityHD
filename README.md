@@ -7,5 +7,4 @@ Place objects in and out of your home!
 - Object Occlusion / People Occlusion
 - Model Conversion
 - Object Interactivity
-- Cloud Storage
 - Scene Persistence
