@@ -1,6 +1,6 @@
-# FurnitureAR
+# RealityHD
 
-Place furniture throughout your house to see what it would look like, before ever purchasing!
+Place objects in and out of your home!
 
 - RealityKit / ARKit
 - SwiftUI / UIKit / Combine
