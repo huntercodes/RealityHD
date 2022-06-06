@@ -1,6 +1,6 @@
 # RealityHD
 
-Place objects in and out of your home!
+Place objects in and around your home!
 
 - RealityKit / ARKit
 - SwiftUI / UIKit / Combine
