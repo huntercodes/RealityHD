@@ -26,7 +26,8 @@ class CustomARView: ARView {
         
         configureARWorld()
         
-        
+        self.initializeSettings()
+        self.setUpSubscribers()
     }
     
     required init(frame frameRect: CGRect) {
