@@ -74,7 +74,7 @@ struct Models {
         // Living Room
         let gramophone = ARModel(name: "gramophone", category: .livingRoom, scaleCompensation: 39 / 100)
         let tv = ARModel(name: "tv_retro", category: .livingRoom, scaleCompensation: 39 / 100)
-        let fender = ARModel(name: "fender_stratocaster", category: .livingRoom, scaleCompensation: 87 / 100)
+        let fender = ARModel(name: "fender_stratocaster", category: .livingRoom, scaleCompensation: 89 / 100)
         let whiteboard = ARModel(name: "scientific_whiteboard", category: .livingRoom, scaleCompensation: 41 / 100)
         self.arModels += [gramophone, tv, fender, whiteboard]
         
