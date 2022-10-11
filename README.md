@@ -4,6 +4,7 @@ Place objects in and around your home!
 
 ### Technologies Used
 
+- Swift
 - RealityKit / ARKit
 - SwiftUI / UIKit / Combine
 - Object Occlusion / People Occlusion
