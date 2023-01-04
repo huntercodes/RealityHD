@@ -1,6 +1,6 @@
 # RealityHD
 
-Place objects in and around your home!
+Place objects in and around your home! Amazing AR practice project!
 
 ### Technologies Used
 
