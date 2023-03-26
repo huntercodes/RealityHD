@@ -10,7 +10,7 @@ import RealityKit
 import Combine
 
 enum ModelCategory: CaseIterable {
-    case kitchen, livingRoom, toys, garden
+    case kitchen, livingRoom, marvel, garden
     
     var label: String {
         get {
@@ -19,8 +19,8 @@ enum ModelCategory: CaseIterable {
                 return "Kitchen"
             case .livingRoom:
                 return "Living Room"
-            case .toys:
-                return "Toys"
+            case .marvel:
+                return "Marvel"
             case .garden:
                 return "Garden"
             }
@@ -29,6 +29,7 @@ enum ModelCategory: CaseIterable {
 }
 
 class ARModel {
+    
     var name: String
     var category: ModelCategory
     var thumbnail: Image
@@ -61,6 +62,7 @@ class ARModel {
                 self.modelEntity?.scale *= self.scaleCompensation
             })
     }
+    
 }
 
 struct Models {
@@ -74,7 +76,7 @@ struct Models {
         // Living Room
         let gramophone = ARModel(name: "gramophone", category: .livingRoom, scaleCompensation: 39 / 100)
         let tv = ARModel(name: "tv_retro", category: .livingRoom, scaleCompensation: 39 / 100)
-        let fender = ARModel(name: "fender_stratocaster", category: .livingRoom, scaleCompensation: 89 / 100)
+        let fender = ARModel(name: "fender_stratocaster", category: .livingRoom, scaleCompensation: 87 / 100)
         let whiteboard = ARModel(name: "scientific_whiteboard", category: .livingRoom, scaleCompensation: 41 / 100)
         self.arModels += [gramophone, tv, fender, whiteboard]
         
@@ -84,12 +86,12 @@ struct Models {
         let teapot = ARModel(name: "teapot", category: .kitchen, scaleCompensation: 41 / 100)
         self.arModels += [chair, cup, teapot]
         
-        // Toys
-        let plane = ARModel(name: "toy_biplane", category: .toys, scaleCompensation: 43 / 100)
-        let car = ARModel(name: "toy_car", category: .toys, scaleCompensation: 43 / 100)
-        let robot = ARModel(name: "toy_robot_vintage", category: .toys, scaleCompensation: 43 / 100)
-        let drummer = ARModel(name: "toy_drummer", category: .toys, scaleCompensation: 47 / 100)
-        self.arModels += [plane, car, robot, drummer]
+        // Marvel
+        let iron = ARModel(name: "mark_85", category: .marvel, scaleCompensation: 0.75 / 100)
+        let thanos = ARModel(name: "toy_thanos", category: .marvel, scaleCompensation: 53 / 100)
+        let spider = ARModel(name: "spiderman", category: .marvel, scaleCompensation: 53 / 100)
+        let silver = ARModel(name: "silver_surfer", category: .marvel, scaleCompensation: 47 / 100)
+        self.arModels += [iron, thanos, spider, silver]
     }
     
     func get(category: ModelCategory) -> [ARModel] {

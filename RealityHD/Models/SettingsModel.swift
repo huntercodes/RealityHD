@@ -25,13 +25,13 @@ enum SettingsModel {
         get {
             switch self {
                 case .peopleOcclusion:
-                    return "person"
+                    return "person.fill"
                 case .objectOcclusion:
-                    return "cube.transparent"
+                    return "cube.transparent.fill"
                 case .lidarDebug:
                     return "light.min"
                 case .multiUser:
-                    return "person.3"
+                    return "person.3.fill"
             }
         }
     }
